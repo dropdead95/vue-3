@@ -2,13 +2,17 @@
   "name": "vue-3-course",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dropdead95.github.io/vue3/",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "gh-pages": "^4.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
